@@ -50,7 +50,7 @@ class SearchCard extends React.Component{
         }
 
         let startDate = Math.round(new Date().getTime() / 1000);
-        let endDate = startDate - (72 * 3600);
+        let endDate = startDate - (96 * 3600);
         let checkForExist = false;
 
         // Prevents duplicates
@@ -67,7 +67,9 @@ class SearchCard extends React.Component{
               token: 'bqhq9i7rh5rbubolrqd0'
             }
         });
+console.log("table_response ==",table_response);
 
+console.log("endDate ==",endDate); 
         if(table_response){
             this.setState({ loading_api: true });
         }

@@ -93,7 +93,7 @@ class FilterCard extends React.Component{
                 <option 
                     value={ graphData.stockValue } 
                     key={ index }
-                    selected={ this.props.showGraphData[this.props.showGraphData.length - 1] === graphData ? "selected" : "" }>
+                    defaultValue={ this.props.showGraphData[this.props.showGraphData.length - 1] === graphData ? "defaultValue" : "" }>
                         { graphData.stockValue }
                 </option>
             )

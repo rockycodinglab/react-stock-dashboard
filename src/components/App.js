@@ -191,7 +191,7 @@ class App extends React.Component{
                 <option 
                 value={ graphData.stockValue } 
                 key={ index }
-                selected={ this.state.graphData[this.state.graphData.length - 1] === graphData ? "selected" : "" }>
+                defaultValue={ this.state.graphData[this.state.graphData.length - 1] === graphData ? "defaultValue" : "" }>
                   { graphData.stockValue }
                 </option>
             )
