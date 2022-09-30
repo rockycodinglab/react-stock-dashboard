@@ -43,5 +43,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "proxy": "https://node-js-mssql-login-api.herokuapp.com"
 }
